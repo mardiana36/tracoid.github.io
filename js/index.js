@@ -787,13 +787,13 @@ $(function () {
       e.preventDefault();
       login = true;
       localStorage.setItem("login", JSON.stringify(login));
-      window.location.href = "index.html";
+      window.location.href = "../index.html";
     });
     $(btnlogout).on("click", function (e) {
       e.preventDefault();
       login = false;
       localStorage.setItem("login", JSON.stringify(login));
-      window.location.href = "index.html";
+      window.location.href = "../index.html";
     });
 
     if (login) {
