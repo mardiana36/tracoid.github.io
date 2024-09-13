@@ -495,15 +495,19 @@
     }
 
     .containerMainT2 {
+        display: flex;
         width: 100vw;
+        justify-content: center;
     }
 
     .contentMainT2 {
-        flex-wrap: wrap;
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
     }
 
     .cardMainT2 {
-        width: calc(100% - 30px);
+        width: 100%;
         margin: 10px 0px;
         padding: 10px 10px 10px 0;
     }
