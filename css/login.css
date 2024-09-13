@@ -1,0 +1,310 @@
+.navLogin{
+    opacity: 0;
+    visibility: hidden;
+   transition: all 0.5s ease;
+}
+.navLoginActif{
+    opacity: 1;
+    visibility: visible;
+    position: sticky;
+}
+.containerLogin {
+    padding: 0;
+    margin-top: -80px;
+    background: var(--Blue) url('../assets/Frame44.png') no-repeat;
+    background-blend-mode: luminosity;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-width: 100vw;
+    min-height: 1000px;
+}
+
+.contentLogin {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: var(--brightness);
+    min-width: inherit;
+    width: inherit;
+}
+
+.cardLogin {
+    position: relative;
+    border: 2px solid var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    min-width: 500px;
+    height: max-content;
+    transition: all 0.5s ease;
+}
+.cardLogin:hover{
+    box-shadow: 0px 0px 40px var(--white);
+}
+.cardLogin::after{
+    animation: toBottom 10s ease-in-out 0s reverse infinite;
+}
+.cardLogin::before{
+    animation: toTop 10s ease-in-out 0s  reverse infinite;
+}
+.cardLogin:hover::after{
+    animation: step-end;
+}
+.cardLogin:hover::before{
+    animation: step-end;
+}
+@keyframes toBottom {
+    50%{
+        top: 50%;
+    }
+}
+@keyframes toTop {
+    50%{
+        bottom: 50%;
+    }
+}
+
+.cardLogin::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 80px;
+    height: 160px;
+    border-bottom: 60px solid transparent;
+    border-top: 60px solid transparent;
+    border-right: 40px solid var(--white);
+}
+.cardLogin::before{
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 80px;
+    height: 160px;
+    border-bottom: 60px solid transparent;
+    border-top: 60px solid transparent;
+    border-left: 40px solid var(--white);
+}
+
+.containerTitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--Blue);
+}
+.containerTitle > h1{
+    margin-top: -10px;
+}
+
+.containerTitle::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 26%;
+    top: 0;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-top: 100px solid var(--white);
+}
+
+.formLogin {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divInputLogin {
+    position: relative;
+    width: 80%;
+    margin-top: 15px !important;
+}
+.divInputLogin::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 10px solid var(--Blue);
+    top: 32%;
+    right: 50px;
+}
+.divInputLogin::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    border-left: 0px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 10px solid var(--Blue);
+    bottom:2px;
+    left: 2.5px;
+    border-radius: 2px 0px 0px 10px;
+}
+.divInputLogin:nth-child(2){
+    margin-top: 10px;
+}
+
+.divInputLogin label{
+    position: relative;
+    margin-left: 20px;
+    bottom: -36px;
+    cursor: text;
+    color: #00000081;
+    transition: all 0.3s ease;
+}
+.divInputLogin input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 20px;
+    outline: 2px dashed var(--Blue);
+    border: none;
+    outline-offset: -4px;
+}
+.divInputLogin input:focus{
+    outline: none;
+    outline: 2px solid var(--Blue);
+}
+
+.divIconLogin {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 100%;
+    color: var(--white);
+    background-color: var(--Blue);
+    z-index: 1;
+}
+.divForgetPw{
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+}
+.divForgetPw a{
+    color: var(--white);
+}
+.divBtnLogin {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+    padding: 5px 30px;
+    border-radius: 10px;
+}
+.divBtnLogin > div input{
+    border: none;
+    background-color: var(--Blue);
+    padding: 10px 60px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: var(--white);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.divBtnLogin > div input:hover{
+    scale: 1.20;
+    box-shadow: 0px 0px 20px #00000081;
+}
+.formLogin > div:nth-last-child(1){
+    margin-top: 20px;
+    text-align: center;
+}
+.formLogin > div:nth-last-child(1) > p{
+    color: var(--white);
+}
+.divOtherLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+.divOtherLogin > a{
+    text-decoration: none;
+    background-color: var(--white);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: var(--Blue);
+    transition: all 0.5s ease;
+}
+.divOtherLogin > a:hover{
+    scale: 1.08;
+}
+.divOtherLogin > a i{
+    font-size: 30px;
+    background-color: var();
+}
+
+.linkRegisterd {
+    margin-top: 30px;
+    color: var(--white);
+}
+.linkRegisterd p > a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 900;
+}
+.addFocus{
+    background-color: var(--Blue);
+    text-align: center;
+    color: var(--white) !important;
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: 2px solid var(--white);
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+#checkPassword{
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    z-index: -1;
+}
+#checkPassword > div{
+    position: relative;
+    background-color: #ffffff82;
+    height: 4px;
+    width: 40px;
+}
+#checkPassword > div p{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    text-wrap: nowrap;
+    font-size: 0.7rem;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--Blue);
+    font-weight: bold;
+}
+#checkPassword > div p::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--white);
+    left: 5px;
+    top: -5px;
+}
+.iconPassword{
+    cursor: pointer;
+}
+.divBtnRegis{
+    margin-top: 70px !important;
+}

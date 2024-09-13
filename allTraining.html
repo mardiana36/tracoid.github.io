@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajahi Pelathian - Tracoid</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/training.css">
+    <link rel="stylesheet" href="css/allTraining.css">
+    <link rel="stylesheet" href="lib/boxicons v2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="lib/Animate On Scroll v2.3.2/dist/aos.css">
+    <script src="lib/jquery v3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <script src="js/navbar.js"></script>
+    <nav class="container containerNavTraining">
+        <div class="content contentNavTraining">
+            <div class="cardNavTraining-1">
+                <i class='bx bx-chevron-left btnLeftT'></i>
+                <i class='bx bx-chevron-right btnRightT'></i>
+                <div class="containerSlideT">
+                    <div class="contentSlideT">
+                        <div class="cardSlideT">
+                            <a href="training.html">Android</a>
+                        </div>
+                        <div class="cardSlideT">
+                            <a href="">IOS</a>
+                        </div>
+                        <div class="cardSlideT">
+                            <a href="">Frond-End Web</a>
+                        </div>
+                        <div class="cardSlideT">
+                            <a href="">Cyber Security</a>
+                        </div>
+                        <div class="cardSlideT">
+                            <a href="">Backend-End Web</a>
+                        </div>
+                        <div class="cardSlideT">
+                            <a href="">Python</a>
+                        </div>
+                        <div class="cardSlideT">
+                            <a href="">Google Cloud</a>
+                        </div>
+                        <div class="cardSlideT">
+                            <a href="">Java</a>
+                        </div>
+                        <div class="cardSlideT">
+                            <a href="">Game Developer</a>
+                        </div>
+                        <div class="cardSlideT">
+                            <a href="">AI</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lineTraining">
+                |
+            </div>
+            <div class="cardNavTraining-2">
+                <a href="allTraining.html" class="activeT">Semua Kelas</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="container containerMainT1" data-aos="zoom-out" data-aos-duration="1000">
+            <div class="content contentMainT1">
+                <div class="cardMainT1">
+                    <h1>Kelas di Tracoid Academy tersedia dari level dasar hingga profesional sesuai kebutuhan industri
+                        terkini.</h1>
+                </div>
+            </div>
+        </section>
+        <section class="container containerAllT2">
+            <div class="content contentAllT2">
+                <div>
+                    <label for="allTLevel" data-aos="fade-up" data-aos-duration="1000">
+                        Tingkat
+                        <i class="bx bx-x iconXAllTLevel"></i>
+                        <input type="text" readonly id="allTLevel" placeholder="Semua Tingkat">
+                        <div class="checkboxAllT checkboxAllTLevel">
+                            <label for="level1">
+                                <input type="checkbox" id="level1" value="Dasar"><span>Dasar</span>
+                            </label>
+                            <label for="level2">
+                                <input type="checkbox" id="level2" value="Pemula"><span>Pemula</span>
+                            </label>
+                            <label for="level3">
+                                <input type="checkbox" id="level3" value="Menengah"><span>Menengah</span>
+                            </label>
+                            <label for="level4">
+                                <input type="checkbox" id="level4" value="Mahir"><span>Mahir</span>
+                            </label>
+                            <label for="level5">
+                                <input type="checkbox" id="level5" value="Profesional"><span>Profesional</span>
+                            </label>
+                        </div>
+                    </label>
+                    <label for="allTTech" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        Teknologi
+                        <i class="bx bx-x iconXAllTTech"></i>
+                        <input type="text" readonly id="allTTech" placeholder="Semua Teknologi">
+                        <div class="checkboxAllT checkboxAllTTech">
+                            <label for="tech1">
+                                <input type="checkbox" id="tech1" value="AI"><span>AI</span>
+                            </label>
+                            <label for="tech2">
+                                <input type="checkbox" id="tech2" value="Android"><span>Android</span>
+                            </label>
+                            <label for="tech3">
+                                <input type="checkbox" id="tech3" value="AR/VR/MR"><span>AR/VR/MR</span>
+                            </label>
+                            <label for="tech4">
+                                <input type="checkbox" id="tech4" value="Chatbot"><span>Chatbot</span>
+                            </label>
+                            <label for="tech5">
+                                <input type="checkbox" id="tech5" value="Cloud Computing"><span>Cloud Computing</span>
+                            </label>
+                            <label for="tech6">
+                                <input type="checkbox" id="tech6" value="Data"><span>Data</span>
+                            </label>
+                            <label for="tech7">
+                                <input type="checkbox" id="tech7" value="UI/UX"><span>UI/UX</span>
+                            </label>
+                            <label for="tech8">
+                                <input type="checkbox" id="tech8" value="Web"><span>Web</span>
+                            </label>
+                            <label for="tech9">
+                                <input type="checkbox" id="tech9" value="Windows"><span>Windows</span>
+                            </label>
+                            <label for="tech10">
+                                <input type="checkbox" id="tech10" value="Multi Platform"><span>Multi Platform</span>
+                            </label>
+                        </div>
+                    </label>
+                    <label for="allTTech" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        Tipe Kelas
+                        <select name="" id="typeAllT">
+                            <option value="">Semua Kelas</option>
+                            <option value="">Kelas Gratis</option>
+                            <option value="">Kelas Berbayar</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section class="container containerAllT3">
+            <div class="content contentAllT3">
+                <div>
+                    <a href="detailTraining.html" class="cardAllT3" data-aos="fade-up-left" data-aos-duration="1000" >
+                        <div class="itemsAllT3">
+                            <div>
+                                <img src="assets/user2.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Mulai Pemrograman dengan Kotlin</p>
+                                <div class="itemsMainT2-1">
+                                    <div><i class='bx bxs-time-five'></i>50 Jam</div>
+                                    <div>
+                                        <i class='bx bxs-star'></i>4.8
+                                    </div>
+                                    <div>
+                                        <i class='bx bx-signal-4'></i>Dasar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem error temporibus ad nemo
+                                illo
+                                labore, itaque magnam rem eos culpa iure officia est officiis tenetur soluta minus nihil
+                                quibusdam quaerat.</p>
+                            <div class="itemsMainT2-2">
+                                <div>
+                                    <i class='bx bxs-file'></i> 180 Modul
+                                </div>
+                                <div>
+                                    <i class='bx bxs-user-account'></i>100.433 Siswa Terdaftar
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailTraining.html" class="cardAllT3" data-aos="fade-up-left" data-aos-duration="1000" >
+                        <div class="itemsAllT3">
+                            <div>
+                                <img src="assets/user2.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Mulai Pemrograman dengan Kotlin</p>
+                                <div class="itemsMainT2-1">
+                                    <div><i class='bx bxs-time-five'></i>50 Jam</div>
+                                    <div>
+                                        <i class='bx bxs-star'></i>4.8
+                                    </div>
+                                    <div>
+                                        <i class='bx bx-signal-4'></i>Dasar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem error temporibus ad nemo
+                                illo
+                                labore, itaque magnam rem eos culpa iure officia est officiis tenetur soluta minus nihil
+                                quibusdam quaerat.</p>
+                            <div class="itemsMainT2-2">
+                                <div>
+                                    <i class='bx bxs-file'></i> 180 Modul
+                                </div>
+                                <div>
+                                    <i class='bx bxs-user-account'></i>100.433 Siswa Terdaftar
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailTraining.html" class="cardAllT3" data-aos="fade-up-left" data-aos-duration="1000" >
+                        <div class="itemsAllT3">
+                            <div>
+                                <img src="assets/user2.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Mulai Pemrograman dengan Kotlin</p>
+                                <div class="itemsMainT2-1">
+                                    <div><i class='bx bxs-time-five'></i>50 Jam</div>
+                                    <div>
+                                        <i class='bx bxs-star'></i>4.8
+                                    </div>
+                                    <div>
+                                        <i class='bx bx-signal-4'></i>Dasar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem error temporibus ad nemo
+                                illo
+                                labore, itaque magnam rem eos culpa iure officia est officiis tenetur soluta minus nihil
+                                quibusdam quaerat.</p>
+                            <div class="itemsMainT2-2">
+                                <div>
+                                    <i class='bx bxs-file'></i> 180 Modul
+                                </div>
+                                <div>
+                                    <i class='bx bxs-user-account'></i>100.433 Siswa Terdaftar
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailTraining.html" class="cardAllT3" data-aos="fade-up-left" data-aos-duration="1000" >
+                        <div class="itemsAllT3">
+                            <div>
+                                <img src="assets/user2.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Mulai Pemrograman dengan Kotlin</p>
+                                <div class="itemsMainT2-1">
+                                    <div><i class='bx bxs-time-five'></i>50 Jam</div>
+                                    <div>
+                                        <i class='bx bxs-star'></i>4.8
+                                    </div>
+                                    <div>
+                                        <i class='bx bx-signal-4'></i>Dasar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem error temporibus ad nemo
+                                illo
+                                labore, itaque magnam rem eos culpa iure officia est officiis tenetur soluta minus nihil
+                                quibusdam quaerat.</p>
+                            <div class="itemsMainT2-2">
+                                <div>
+                                    <i class='bx bxs-file'></i> 180 Modul
+                                </div>
+                                <div>
+                                    <i class='bx bxs-user-account'></i>100.433 Siswa Terdaftar
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailTraining.html" class="cardAllT3" data-aos="fade-up-left" data-aos-duration="1000" >
+                        <div class="itemsAllT3">
+                            <div>
+                                <img src="assets/user2.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Mulai Pemrograman dengan Kotlin</p>
+                                <div class="itemsMainT2-1">
+                                    <div><i class='bx bxs-time-five'></i>50 Jam</div>
+                                    <div>
+                                        <i class='bx bxs-star'></i>4.8
+                                    </div>
+                                    <div>
+                                        <i class='bx bx-signal-4'></i>Dasar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem error temporibus ad nemo
+                                illo
+                                labore, itaque magnam rem eos culpa iure officia est officiis tenetur soluta minus nihil
+                                quibusdam quaerat.</p>
+                            <div class="itemsMainT2-2">
+                                <div>
+                                    <i class='bx bxs-file'></i> 180 Modul
+                                </div>
+                                <div>
+                                    <i class='bx bxs-user-account'></i>100.433 Siswa Terdaftar
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailTraining.html" class="cardAllT3" data-aos="fade-up-left" data-aos-duration="1000" >
+                        <div class="itemsAllT3">
+                            <div>
+                                <img src="assets/user2.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Mulai Pemrograman dengan Kotlin</p>
+                                <div class="itemsMainT2-1">
+                                    <div><i class='bx bxs-time-five'></i>50 Jam</div>
+                                    <div>
+                                        <i class='bx bxs-star'></i>4.8
+                                    </div>
+                                    <div>
+                                        <i class='bx bx-signal-4'></i>Dasar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem error temporibus ad nemo
+                                illo
+                                labore, itaque magnam rem eos culpa iure officia est officiis tenetur soluta minus nihil
+                                quibusdam quaerat.</p>
+                            <div class="itemsMainT2-2">
+                                <div>
+                                    <i class='bx bxs-file'></i> 180 Modul
+                                </div>
+                                <div>
+                                    <i class='bx bxs-user-account'></i>100.433 Siswa Terdaftar
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailTraining.html" class="cardAllT3" data-aos="fade-up-left" data-aos-duration="1000" >
+                        <div class="itemsAllT3">
+                            <div>
+                                <img src="assets/user2.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Mulai Pemrograman dengan Kotlin</p>
+                                <div class="itemsMainT2-1">
+                                    <div><i class='bx bxs-time-five'></i>50 Jam</div>
+                                    <div>
+                                        <i class='bx bxs-star'></i>4.8
+                                    </div>
+                                    <div>
+                                        <i class='bx bx-signal-4'></i>Dasar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem error temporibus ad nemo
+                                illo
+                                labore, itaque magnam rem eos culpa iure officia est officiis tenetur soluta minus nihil
+                                quibusdam quaerat.</p>
+                            <div class="itemsMainT2-2">
+                                <div>
+                                    <i class='bx bxs-file'></i> 180 Modul
+                                </div>
+                                <div>
+                                    <i class='bx bxs-user-account'></i>100.433 Siswa Terdaftar
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailTraining.html" class="cardAllT3" data-aos="fade-up-left" data-aos-duration="1000" >
+                        <div class="itemsAllT3">
+                            <div>
+                                <img src="assets/user2.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Mulai Pemrograman dengan Kotlin</p>
+                                <div class="itemsMainT2-1">
+                                    <div><i class='bx bxs-time-five'></i>50 Jam</div>
+                                    <div>
+                                        <i class='bx bxs-star'></i>4.8
+                                    </div>
+                                    <div>
+                                        <i class='bx bx-signal-4'></i>Dasar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem error temporibus ad nemo
+                                illo
+                                labore, itaque magnam rem eos culpa iure officia est officiis tenetur soluta minus nihil
+                                quibusdam quaerat.</p>
+                            <div class="itemsMainT2-2">
+                                <div>
+                                    <i class='bx bxs-file'></i> 180 Modul
+                                </div>
+                                <div>
+                                    <i class='bx bxs-user-account'></i>100.433 Siswa Terdaftar
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailTraining.html" class="cardAllT3" data-aos="fade-up-left" data-aos-duration="1000" >
+                        <div class="itemsAllT3">
+                            <div>
+                                <img src="assets/user2.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Mulai Pemrograman dengan Kotlin</p>
+                                <div class="itemsMainT2-1">
+                                    <div><i class='bx bxs-time-five'></i>50 Jam</div>
+                                    <div>
+                                        <i class='bx bxs-star'></i>4.8
+                                    </div>
+                                    <div>
+                                        <i class='bx bx-signal-4'></i>Dasar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem error temporibus ad nemo
+                                illo
+                                labore, itaque magnam rem eos culpa iure officia est officiis tenetur soluta minus nihil
+                                quibusdam quaerat.</p>
+                            <div class="itemsMainT2-2">
+                                <div>
+                                    <i class='bx bxs-file'></i> 180 Modul
+                                </div>
+                                <div>
+                                    <i class='bx bxs-user-account'></i>100.433 Siswa Terdaftar
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailTraining.html" class="cardAllT3" data-aos="fade-up-left" data-aos-duration="1000" >
+                        <div class="itemsAllT3">
+                            <div>
+                                <img src="assets/user2.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Mulai Pemrograman dengan Kotlin</p>
+                                <div class="itemsMainT2-1">
+                                    <div><i class='bx bxs-time-five'></i>50 Jam</div>
+                                    <div>
+                                        <i class='bx bxs-star'></i>4.8
+                                    </div>
+                                    <div>
+                                        <i class='bx bx-signal-4'></i>Dasar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem error temporibus ad nemo
+                                illo
+                                labore, itaque magnam rem eos culpa iure officia est officiis tenetur soluta minus nihil
+                                quibusdam quaerat.</p>
+                            <div class="itemsMainT2-2">
+                                <div>
+                                    <i class='bx bxs-file'></i> 180 Modul
+                                </div>
+                                <div>
+                                    <i class='bx bxs-user-account'></i>100.433 Siswa Terdaftar
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detailTraining.html" class="cardAllT3" data-aos="fade-up-left" data-aos-duration="1000" >
+                        <div class="itemsAllT3">
+                            <div>
+                                <img src="assets/user2.jpg" alt="">
+                            </div>
+                            <div>
+                                <p>Mulai Pemrograman dengan Kotlin</p>
+                                <div class="itemsMainT2-1">
+                                    <div><i class='bx bxs-time-five'></i>50 Jam</div>
+                                    <div>
+                                        <i class='bx bxs-star'></i>4.8
+                                    </div>
+                                    <div>
+                                        <i class='bx bx-signal-4'></i>Dasar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem error temporibus ad nemo
+                                illo
+                                labore, itaque magnam rem eos culpa iure officia est officiis tenetur soluta minus nihil
+                                quibusdam quaerat.</p>
+                            <div class="itemsMainT2-2">
+                                <div>
+                                    <i class='bx bxs-file'></i> 180 Modul
+                                </div>
+                                <div>
+                                    <i class='bx bxs-user-account'></i>100.433 Siswa Terdaftar
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="container containerMainT4" data-aos="slide-up" data-aos-duration="1000">
+            <div class="content contentMainT4">
+                <h1>Apa kata lulusan Tracoid?</h1>
+                <div class="divMianT4">
+                    <div class="itemMainT4" data-aos="fade-right" data-aos-duration="1000">
+                        <div>
+                            <div>
+                                <img src="assets/user1.jpg" alt="">
+                            </div>
+                            <div class="detailTestimonialT4">
+                                <p>Jokoniwa Sanjaya</p>
+                                <div><i class='bx bxs-buildings'></i>Gojek</div>
+                                <div><i class='bx bxs-backpack'></i>Adroid Depeloper Expert</div>
+                                <div class="divStarT4"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Kelas ini memberikan cara pandang baru bagi saya ketika mengembangkan sebuah aplikasi
+                                Android. Kelas ini mengajarkan bahwa sebuah aplikasi haruslah menerapkan best practices
+                                dan standar yang baik, sehingga aplikasi yang dihasilkan dapat menjadi lebih scalable,
+                                maintainable, serta mengurangi resiko munculnya masalah di masa depan.</p>
+                        </div>
+                    </div>
+                    <div class="lineMainT4"></div>
+                    <div class="itemMainT4" data-aos="fade-left" data-aos-duration="1000">
+                        <div>
+                            <div>
+                                <img src="assets/user1.jpg" alt="">
+                            </div>
+                            <div class="detailTestimonialT4">
+                                <p>Jokoniwa Sanjaya</p>
+                                <div><i class='bx bxs-buildings'></i>Gojek</div>
+                                <div><i class='bx bxs-backpack'></i>Adroid Depeloper Expert</div>
+                                <div class="divStarT4"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Kelas ini memberikan cara pandang baru bagi saya ketika mengembangkan sebuah aplikasi
+                                Android. Kelas ini mengajarkan bahwa sebuah aplikasi haruslah menerapkan best practices
+                                dan standar yang baik, sehingga aplikasi yang dihasilkan dapat menjadi lebih scalable,
+                                maintainable, serta mengurangi resiko munculnya masalah di masa depan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showAllMainT4"><a href="">Lihat testimoni laninnya</a></div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/footer.js"></script>
+    <script src="/js/initAos.js"></script>
+</body>
+
+</html>

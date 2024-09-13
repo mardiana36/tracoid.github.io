@@ -1,0 +1,378 @@
+.site-header {
+    position: sticky;
+}
+.containerdetailT {
+    background: linear-gradient(50deg, var(--Blue) 55%, var(--lightBlue));
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contentDetailT>div {
+    position: absolute;
+    background-color: #ffffff12;
+    border-radius: 100%;
+}
+
+.cardDT1 {
+    min-width: 50vw;
+    min-height: 50vw;
+    top: -10vw;
+    left: -5vw;
+}
+
+.cardDT2 {
+    min-width: 35vw;
+    min-height: 35vw;
+    top: 80px;
+    left: -80px;
+}
+
+.cardDT3 {
+    min-width: 40vw;
+    min-height: 40vw;
+    right: -20%;
+}
+.cardDT4 {
+    min-width: 35vw;
+    min-height: 20vw;
+    top: -10vw;
+    right: 15%;
+}
+
+.contentDT2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -150px;
+    z-index: 1;
+    gap: 60px;
+}
+.contentDT2 > div{
+    border-radius: 10px;
+   
+}
+.cardDT21{
+    min-width: 400px;
+}
+.imageDT21{
+    position: sticky;
+    top: 80px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #0000002c;
+}
+
+.divDesDT21{
+    position: sticky;
+    top: 100px;
+    z-index: 1;
+    background-color: var(--darkModeColorW);
+    margin-top: -15px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 5px 20px #0000002c;
+    color: var(--darkModeColorB);
+}
+.divDesDT21 > h1{
+    font-size: 1.4rem;
+}
+.divDesDT21 > div{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.divTecDT21{
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    color: var(--Blue);
+}
+.divTecDT21> span{
+    padding: 5px;
+    border: 1px solid var(--Blue);
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+.itemsMainT2-1{
+    display: flex;
+    justify-content: space-between;
+}
+.divBtnDT2{
+    padding-bottom: 20px;
+    border-bottom: 2px solid #00000017;
+}
+.divBtnDT2 > button{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--Blue);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: var(--white);
+    cursor: pointer;
+}
+.NextClass p{
+    color: var(--Blue);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.NextClass p i{
+    font-size: 20px;
+}
+.NextClass div span{
+    color: var(--Blue);
+}
+.NextClass h2{
+    color: var(--darkModeColorB);
+    font-size: 1.4rem;
+}
+.NextClass{
+    text-decoration: none;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.cardDT22{
+    background-color: var(--darkModeColorW);
+    box-shadow: 0px 0px 20px #0000002c;
+    padding: 40px 0;
+    color:var(--darkModeColorB);
+}
+.cardDT22 > div{
+    padding: 0 40px;
+}
+.cardDT22 > div:not(.descriptonDT2){
+    padding: 0 40px;
+    margin-top: 20px;
+}
+.cardDT22 > div > h1{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.descriptonDT2 > div{
+    display: flex;
+    justify-content: center;
+}
+.descriptonDT2 > div button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: unset;
+    color: var(--Blue);
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    gap: 5px;
+}
+.descriptonDT2 > p{
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+    transition: all 0.5s ease-in-out;  
+    
+}
+.benefitDT2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.benefitDT2 > div{
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    width: calc(50% - 10px);
+}
+.benefitDT2 > div i{
+    font-size: 25px;
+    color: var(--Blue);
+}
+.navTD2{
+    position: sticky;
+    top: 76px;
+    z-index: 20;
+    padding: 10px 40px !important;
+    border-top: 2px solid var(--Blue);
+    border-bottom: 2px solid var(--Blue);
+    background-color: var(--darkModeColorW);
+}
+.navTD2 ul{
+    display: flex;
+    gap: 20px;
+}
+.navTD2 ul li{
+    list-style-type: none;
+}
+.navTD2 ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--darkModeColorB);
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.itemMainT4{
+    border: 2px solid #00000017;
+    outline: 2px solid var(--white);
+}
+.divTestimonialDT2{
+    margin-top: 20px !important;
+    flex-direction: column;
+    gap: 20px !important;
+}
+.showAllMainT4 a{
+    color: var(--Blue) !important;
+}
+.faqDT2 > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.faqDT2 > div a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--Blue);
+    padding: 10px;
+    border: 1px solid var(--Blue);
+    border-radius: 10px;
+
+}
+.faqDT2 > div a i{
+    font-size: 30px;
+    transform: rotate(45deg);
+}
+
+.containerDropDT2{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+.contentDropDT2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid #00000017;
+    padding: 20px;
+    border-radius: 10px;
+    outline: 2px solid var(--white);
+}
+.iconDropDT{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 25px;
+    color: #00000066;
+}
+.contentDropDT2 > h1{
+    font-size: 1.2rem;
+    color: var(--Blue);
+}
+.contentDropDT2  > div, .sumSilabus{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contentDropDT2  > div div i{
+    font-size: 25px;
+}
+.contentDropDT2  > div div:not(.sumSilabus){
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--lightBlue);
+}
+.sumSilabus{
+    color: var(--Blue);
+    border: 1px solid var(--Blue);
+    padding: 5px;
+    border-radius: 10px;
+}
+.sumSilabus >p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.UlSubCategoryDT2{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 2px solid #00000017;
+    padding: 20px 0;
+}
+.UlSubCategoryDT2 > li{
+    list-style-type: none;
+    color: var(--lightBlue);
+}
+.UlSubCategoryDT2 > li a{
+    color: var(--Blue);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.UlSubCategoryDT2 > li a:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+.activeDT2{
+    color: var(--Blue) !important;
+    border-bottom: 2px solid var(--Blue);
+}
+@media screen and (max-width: 1024px) {
+    
+    .contentDT2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: -150px;
+        z-index: 1;
+        gap: 60px;
+    }
+    .contentDT2 > div{
+        border-radius: 10px;
+       
+    }
+    .cardDT21{
+        min-width: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .benefitDT2 > div{
+        display: flex;
+        align-items: start;
+        gap: 5px;
+        width: 100%;
+    }
+    .navTD2{
+      padding: 10px !important;
+    }
+    .navTD2 ul{
+        display: flex;
+        gap: 10px;
+    }
+    .contentDropDT2{
+        padding: 10px;
+    }
+    .contentDT2 {
+        padding: 0;
+        width: 100vw;
+    }
+    .cardDT22 > div{
+        padding: 0 20px !important;
+    }
+    .sumSilabus{
+        gap: 5px;
+        text-align: center;
+    }
+}

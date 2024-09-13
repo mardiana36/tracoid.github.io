@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy - Progress Belajar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/learning.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/subscribe.css">
+    <link rel="stylesheet" href="lib/boxicons v2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="lib/Animate On Scroll v2.3.2/dist/aos.css">
+    <script src="lib/jquery v3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <script src="js/navbar.js"></script>
+    <main>
+        <section class="container containerLearning">
+            <div class="contentLearning content">
+                <div class="containerSidebar">
+                    <div>
+                        <div class="contentSidebar">
+                            <i class='bx bxs-chevrons-left iconSidebarSize'></i>
+                            <h1 class="logoSideBar">Academy</h1>
+                        </div>
+                        <ul>
+                            <li><a href="learning.html"><i class='bx bx-spreadsheet iconSidebar'></i> <span> Progress Belajar</span></a></li>
+                            <li class="activeSidebarL"><a href="subscribe.html"><i class='bx bx-credit-card iconSidebar'></i><span> Langganan</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="containerContentL">
+                    <p data-aos="fade-down" data-aos-duration="1000">Langganan</p>
+                    <div class="SubsStatus" data-aos="slide-up" data-aos-duration="1000">
+                        <div>
+                            <h3><i class='bx bxs-notification' ></i>Status Langganan</h3>
+                            <div class="divItemSubs">
+                                <i class='bx bx-check-double'></i>
+                                <p>Premium Plan</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="subsFee.html">Pilih Paket Langganan</a>
+                        </div>
+                    </div>
+                    <div class="listTransaction" data-aos="slide-up" data-aos-duration="1000">
+                        <div>
+                            <div class="divtTitleTrans" >
+                               <h3><i class='bx bx-money-withdraw'></i> Daftar Transaksi</h3>
+                               <p><i class='bx bx-filter-alt' ></i>Filter <i class='bx bx-caret-down'></i></p>
+                            </div>
+                            <div class="containerTableSubs">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Tanggal & waktu</th>
+                                            <th>Kode Transaksi</th>
+                                            <th>Harga</th>
+                                            <th>Metode Pembayaran</th>
+                                            <th>Status</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>30/08/2024 14:30</td>
+                                            <td>8483743838</td>
+                                            <td>Rp400.000</td>
+                                            <td>Transfer Bank(BRI)</td>
+                                            <td><p>Sukses</p></td>
+                                            <td><a href="">Detail</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>30/08/2024 14:30</td>
+                                            <td>8483743838</td>
+                                            <td>Rp0</td>
+                                            <td>Aktivasi Token</td>
+                                            <td><p class="colorRed">Gagal</p></td>
+                                            <td><a href="">Detail</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/footer.js"></script>
+    <script src="/js/initAos.js"></script>
+</body>
+</html>
