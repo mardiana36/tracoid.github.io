@@ -1,0 +1,167 @@
+.cardMainT1 h1{
+    padding: 0 10vw;
+    font-weight: 600;
+}
+.containerAllT2{
+    margin-top: 20px;
+}
+.contentAllT2 > div{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.containerAllT2 > div label{
+    width: 100%;
+    font-weight: 600;
+    color: var(--Blue);
+    position: relative;
+}
+.containerAllT2 > div label:nth-of-type(1){
+    z-index: 100;
+}
+.containerAllT2 > div label:nth-of-type(2){
+    z-index: 50;
+}
+.containerAllT2 > div input, .containerAllT2 > div select{
+    display: block;
+    width: 100%;
+    padding: 10px ;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--Blue);
+    background-color: var(--darkModeColorW);
+    color: var(--darkModeColorB);
+}
+.containerAllT2 > div input::placeholder{
+    color: var(--colorPalceholder);
+}
+.checkboxAllT{
+    visibility: hidden;
+    opacity: 0;
+    border: 1px solid var(--Blue);
+    padding: 10px;
+    border-top: unset;
+    position: absolute;
+    z-index: 10;
+    min-width: 100%;
+    background-color: var(--darkModeColorW);
+    border-radius: 0px 0px 5px 5px;
+    overflow-y: auto;
+    max-height: 0px;
+    transition: all 0.5s ease-in-out;
+}
+.checkboxAllT:hover{
+    visibility: visible;
+    max-height: 200px;
+    opacity: 1;
+}
+#allTTech:focus + .checkboxAllT{
+    visibility: visible;
+    max-height: 200px;
+    opacity: 1;
+}
+#allTLevel:focus + .checkboxAllT{
+    visibility: visible;
+    max-height: 200px;
+    opacity: 1;
+}
+.checkboxAllT  label{
+    font-weight: 500 !important;
+    color: var(--darkModeColorB) !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+.checkboxAllT  label:hover{
+    background-color: #478bcf52;
+}
+.checkboxAllT input{
+    width: max-content !important;
+    margin: 0 !important;
+}
+.iconXAllTLevel, .iconXAllTTech{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    cursor: pointer;
+    color: #fe0000;
+    background-color: var(--darkModeColorW);
+    font-size: 20px;
+}
+.containerAllT3{
+    margin-top: 20px;
+}
+.contentAllT3{
+    display: flex;
+    justify-content: center;
+}
+.contentAllT3 > div{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.cardAllT3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--darkModeColorB);
+    border-radius: 10px;
+    border: 1px solid #8d8c8c47;
+    padding: 10px;
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+}
+.cardAllT3:hover{
+    transition: all 0.5s ease-in-out !important;
+    box-shadow: 0px 10px 10px var(--Blue);
+}
+.itemsAllT3{
+    display: flex;
+    gap: 10px;
+    
+}
+.itemsAllT3 > div:nth-last-of-type(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.itemsAllT3 >div:nth-of-type(1){
+    width: 120px;
+    height: 120px;
+}
+.itemsAllT3 > div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.itemsAllT3 > div > p{
+    font-weight: 700;
+}
+.itemsMainT2-2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.itemsMainT2-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+@media screen and (max-width:1136px) {
+    .cardAllT3{
+        width: calc(100% / 2 - 20px);
+    }
+}
+@media screen and (max-width:600px) {
+    .contentAllT2 > div{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .cardAllT3{
+        width: calc(100%);
+    }
+}

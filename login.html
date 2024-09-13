@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk -Tracoid</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="lib/boxicons v2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="lib/Animate On Scroll v2.3.2/dist/aos.css">
+    <script src="lib/jquery v3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <script src="js/navbar.js" class="navLogin"></script>
+    <main>
+        <section class="container containerLogin">
+            <div class="content contentLogin" data-aos="zoom-out" data-aos-duration="1000">
+                <div class="cardLogin">
+                    <div class="containerTitle">
+                        <h1>Masuk</h1>
+                    </div>
+
+                    <form action="" class="formLogin">
+                        <div class="divInputLogin">
+                            <label for="emailLogin" >Email</label>
+                            <input type="email" id="emailLogin" required autocomplete="email">
+                            <div class="divIconLogin">
+                                <i class='bx bxs-envelope'></i>
+                            </div>
+                        </div>
+                        <div class="divInputLogin">
+                            <label for="passwordLogin">Password</label>
+                            <input type="password" minlength="8" key="password" class="statusActive"  id="passwordLogin" required autocomplete="current-password">
+                            <div class="divIconLogin">
+                                <i class='bx bxs-lock iconPassword'></i>
+                            </div>
+                            <div id="checkPassword">
+                                <div><p>Mudah</p></div>
+                                <div><p>Normal</p></div>
+                                <div><p>Aman</p></div>
+                                <div><p>Sangat Aman</p></div>
+                            </div>
+                        </div>
+                        <div class="divForgetPw">
+                            <a href="">Lupa Password</a>
+                        </div>
+                        <div class="divBtnLogin">
+                            <div>
+                                <input type="submit" id="btnSubmit" value="Masuk">
+                            </div>
+                        </div>
+                        <div>
+                            <p>Atau masuk dengan</p>
+                            <div class="divOtherLogin">
+                                <a href=""><i class='bx bxl-google'></i>Google</a href="">
+                                <a href=""><i class='bx bxl-facebook'></i>Facebook</a href="">
+                            </div>
+                            <div class="linkRegisterd">
+                                <p>Belum punya akun? Ayo <a href="regis.html">Daftar</a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/footer.js"></script>
+    <script src="js/initAos.js"></script>
+</body>
+
+</html>
