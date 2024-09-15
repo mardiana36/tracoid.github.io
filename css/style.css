@@ -388,6 +388,7 @@ main{
 }
 /* footer */
 footer{
+    position: relative;
     border-top: 1px solid var(--Blue);
     margin-top: auto;
 
@@ -472,6 +473,7 @@ footer{
     font-size: 20px;
 }
 .cardFooter-2 > p a{
+    display: inline-block;
     color: #478bcfc1
 }
 .containerAlert{
@@ -626,5 +628,9 @@ footer{
     .cardFooter-1{
         gap: 10px;
         grid-template-columns: 1fr 1fr;
+    }
+    .cardFooter-2 > p{
+        display: block;
+        text-align: center;
     }
 }
