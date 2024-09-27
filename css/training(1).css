@@ -1,0 +1,543 @@
+.showHideNav:nth-of-type(2) {
+    border-bottom: 2px solid var(--Blue);
+}
+
+.site-header {
+    position: relative;
+}
+
+.containerNavTraining {
+    border-top: 1px solid var(--Blue);
+    background-color: var(--darkModeColorW);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.lineTraining {
+    color: var(--darkModeColorB);
+}
+
+.contentNavTraining {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    gap: 40px;
+}
+
+.cardNavTraining-1 {
+    position: relative;
+    width: calc(100% - 40px - 10vw);
+}
+
+.btnRightT, .btnLeftT {
+    position: absolute;
+    bottom: 5px;
+    font-size: 30px;
+    border: 1px solid var(--darkModeColorB);
+    border-radius: 100%;
+    z-index: 1;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    color: var(--darkModeColorB);
+}
+
+.contentNavTraining:hover .btnLeftT, .contentNavTraining:hover .btnRightT {
+    visibility: visible;
+    opacity: 1;
+}
+
+.btnLeftT {
+    left: -15px;
+}
+
+.btnRightT {
+    right: -35px;
+
+}
+
+.containerSlideT {
+    width: 100%;
+    position: relative;
+    overflow-x: scroll;
+
+}
+
+.containerSlideT::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+.contentSlideT {
+    position: relative;
+    display: flex;
+    justify-content: left;
+}
+
+.cardSlideT {
+    min-width: max-content;
+    margin-left: 10px;
+}
+
+.cardSlideT>a, .cardNavTraining-2 a {
+    display: inline-block;
+    text-wrap: nowrap;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--darkModeColorB);
+}
+
+.activeT {
+    background-color: var(--Blue);
+    border-radius: 10px;
+    color: var(--darkModeColorW) !important;
+}
+
+.containerMainT1 {
+    background: var(--Blue) url("../assets/Frame44.png") no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    background-position: center;
+}
+
+.contentMainT1 {
+    padding: 20px;
+    text-align: center;
+    color: var(--white);
+}
+
+.cardMainT1 h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.cardMainT1 p {
+    padding: 10px 18vw;
+    font-size: 1.2rem;
+}
+
+.containerMainT2 {
+    margin-top: 50px;
+}
+
+.contentMainT2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardMainT2 {
+    margin: 15px;
+    width: calc(50% - 30px);
+    min-width: 400px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px dashed var(--Blue);
+    padding: 20px 20px 20px 0;
+}
+
+.cardMainT2:hover {
+    box-shadow: 0px 0px 20px var(--Blue);
+    border: 2px solid var(--Blue);
+    transition: all 0.5s ease-in-out;
+}
+
+.cardMainT2>div {
+    width: inherit;
+}
+
+.divDetailMainT2 {
+    min-width: 52%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.divImageMainT2>img {
+    transform: translateX(-15px);
+    width: calc(100% + 15px);
+    min-width: 150px;
+    min-height: 150px;
+    object-fit: cover;
+    border-radius: 0 10px 10px 20px;
+    border-top: 4px solid var(--Blue);
+}
+
+.divImageMainT2 {
+    position: relative;
+}
+
+.divImageMainT2::after {
+    content: "";
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--Blue);
+    left: -14px;
+    top: -8px;
+    transform: rotate(-45deg);
+}
+
+.divDetailMainT2>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.divDetailMainT2>div span {
+    color: var(--Blue);
+    font-weight: 600;
+}
+
+.conatinerSlideHoverT2 {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.conatinerSlideHoverT2:hover .contentSlideHoverT2 {
+    transform: translateX(calc(-100% - 20px));
+}
+
+.contentSlideHoverT2 {
+    position: relative;
+    display: flex;
+    transform: translateX(0%);
+    transition: all 1s ease-in-out;
+}
+
+.cardSlideHoverT2 {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--darkModeColorB);
+}
+
+.cardSlideHoverT2>p {
+    font-weight: bold;
+}
+
+.cardSlideHoverT2>div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.itemsMainT2-1>div, .itemsMainT2-2>div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.itemsMainT2-1>div>i {
+    font-size: 25px;
+}
+
+.itemsMainT2-1>div:nth-child(1) {
+    color: var(--lightBlue);
+}
+
+.itemsMainT2-1>div:nth-child(2) {
+    color: #FFBE5C;
+}
+
+.itemsMainT2-1>div:nth-child(3) {
+    color: var(--Blue);
+}
+
+.itemsMainT2-2>div>i {
+    font-size: 30px;
+    color: var(--darkModeColorB);
+}
+
+.itemsMainT2-2>div {
+    color: var(--darkModeColorB);
+}
+
+.divDetailMainT2-3 a {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Blue);
+    color: var(--white);
+    text-decoration: none;
+    padding: 5px 20px;
+    font-weight: 900;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    box-shadow: inset 0px 0px 2px 5px #02020242;
+}
+
+.divDetailMainT2-3 a:hover {
+    scale: 1.01;
+    box-shadow: inset 0px 0px 2px 2px #ffffffc8,
+        0px 0px 10px #0000004a;
+}
+
+.divDetailMainT2-3 a>i {
+    font-size: 40px;
+}
+
+.textSlideHoverT2 {
+    font-weight: normal !important;
+    margin-top: 10px;
+}
+
+.cardSlideHoverT2:nth-last-child(1) {
+    margin-left: 20px;
+}
+
+.containerMainT3 {
+    margin-top: 40px;
+}
+
+
+
+.cardMain3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardMain3>h1 {
+    color: var(--Blue);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.divImgMain3 {
+    margin-top: 20px;
+    width: 80%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.divImgMain3>div {
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-left: -15px;
+    border: 4px solid var(--white);
+    transition: all 0.5s ease-in-out;
+}
+
+.divImgMain3>div:hover {
+    margin-right: 25px;
+    margin-left: 0;
+    border: 4px solid var(--lightBlue);
+    scale: 1.2;
+}
+
+.divImgMain3>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containerMainT4 {
+    margin-top: 40px;
+    background-color: var(--Blue);
+    padding: 100px 0px 40px;
+    border-radius: 250px 250px 0 0;
+    box-shadow: inset 0px 40px 5px #0000004a;
+}
+
+.contentMainT4>h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--darkModeColorW);
+}
+
+.divMianT4 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.itemMainT4 {
+    background-color: var(--darkModeColorW);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.itemMainT4>div:nth-child(1) {
+    display: flex;
+    gap: 10px;
+}
+
+.itemMainT4>div>div img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.itemMainT4>div:nth-child(1) div p {
+    color: var(--Blue);
+    font-weight: 600;
+}
+
+.itemMainT4>div:nth-child(2) p {
+    color: var(--darkModeColorB);
+    margin-top: 15px;
+}
+
+.detailTestimonialT4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.detailTestimonialT4>div {
+    color: var(--darkModeColorB);
+}
+
+.detailTestimonialT4>div i {
+    font-size: 20px;
+    color: var(--darkModeColorB);
+}
+
+.divStarT4 i {
+    color: #FFBE5C !important;
+}
+
+.lineMainT4 {
+    background-color: var(--darkModeColorW);
+    min-width: 5px;
+    min-height: 300px;
+    border-radius: 10px;
+}
+
+.showAllMainT4 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+}
+
+.showAllMainT4 a {
+    color: var(--white);
+
+}
+
+@media screen and (max-width:1136px) {
+    .cardNavTraining-1 {
+        width: calc(100% - 80px - 20vw);
+    }
+
+    .btnLeftT {
+        left: -35px;
+    }
+
+    .cardMainT1 p {
+        padding: 10px 10vw;
+        font-size: 1rem;
+    }
+
+    .containerMainT2 {
+        margin-top: 20px;
+    }
+
+    .contentMainT2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cardMainT2 {
+        width: calc(100% - 30px);
+    }
+
+    .containerMainT4 {
+        padding: 80px 0px 40px;
+        border-radius: 200px 200px 0 0;
+    }
+
+    .divMianT4 {
+        gap: 20px;
+    }
+
+    .btnLeftT, .btnRightT {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .btnLeftT {
+        left: -20px;
+    }
+
+    .itemsMainT2-1>div {
+        text-wrap: nowrap;
+        font-size: 0.8rem;
+    }
+
+    .itemsMainT2-2>div {
+        font-size: 0.8rem;
+    }
+
+    .contentNavTraining {
+        gap: 10px;
+    }
+
+    .cardMainT1 p {
+        padding: 10px 0vw;
+    }
+
+    .containerMainT2 {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .contentMainT2 {
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardMainT2 {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 10px 10px 10px 0;
+    }
+
+    .cardSlideHoverT2 {
+        min-width: calc(100% - 10vw);
+        gap: 0px;
+    }
+
+    .cardSlideHoverT2:nth-last-child(1) {
+        margin-left: calc(15vw + 2px);
+    }
+
+    .divDetailMainT2 {
+        margin-left: 10px;
+    }
+
+    .divImageMainT2 {
+        max-width: 40%;
+    }
+
+    .divMianT4 {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .lineMainT4 {
+        background-color: var(--white);
+        min-width: 80%;
+        min-height: 5px;
+        border-radius: 10px;
+    }
+}
